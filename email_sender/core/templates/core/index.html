@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+{% csrf_token %}
+
+<body>
+    <form method="POST" action="{% url 'index:index' %}">
+        {% csrf_token %}
+        <input name="message"> <br>
+        <input name="email">email<br>
+        <input name="subject">subject<br>
+        <button type="submit"></button>
+    </form>
+</body>
+
+</html>
